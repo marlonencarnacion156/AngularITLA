@@ -1,24 +1,29 @@
 
-<h1>{{title}}</h1>
+<div class="pstatic">
+<h3>{{title}}</h3>
+<div class="body">
+<div class="nombre"><label> <strong>Nombre:</strong></label>
+<small>{{' '+ nombre}}</small></div>
 
-<h3>Nombre:</h3>
-<h4>{{nombre}}</h4>
 
+<div class="bio"><label><strong>Biografía:</strong></label>
+<small>{{' '+ bio}}</small></div>
+</div>
 
-<h3>Bio:</h3>
-<h4>{{bio}}</h4>
+</div>
 
-<hr>
-<h1>{{title}}</h1>
+<div class="pflex">
 
-<div><label for="">Nombre:</label><input type="text" [(ngModel)]="nombre2"></div>
-<br>
-<div><label for="">Bio:</label><input type="text" [(ngModel)]="bio2"></div>
-<br>
-<h2>Nombre:</h2>
-<p>{{nombre2}}</p>
-<h2>Bio:</h2>
-<p>{{bio2}}</p>
+<h3>{{title}}</h3>
+<div class="into">
+<div><input type="text" placeholder="Nombre" [(ngModel)]="nombre2"></div>
+<div><input type="text" placeholder="Biografía" [(ngModel)]="bio2"></div>
+</div>
+<div class="flex">
+<div><label><strong>Nombre:</strong></label><small>{{' '}}{{nombre2}}</small></div>
+<div><label><strong>Biografía:</strong></label><small>{{' '}} {{bio2}} </small></div>
+</div>
+</div>
 
 
 

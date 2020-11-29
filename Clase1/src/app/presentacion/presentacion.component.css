@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*:focus{
+  outline: none;
+}
+
+.nombre h3, .bio h3{
+  color: #01b49e;
+}
+
+.pstatic{
+display: grid;
+grid-template-rows: 1fr 1fr;
+width: 600px;
+border-radius: 5px;
+position: absolute;
+right: 50%;
+left: 50%;
+transform: translateX(-50%);
+gap: 2px;
+padding: 10px;
+background: #fff;
+box-shadow: 1px 1px 10px rgba(155, 155, 155, .5);
+
+}
+
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.body *{
+  margin-bottom: 4px;
+  color: #01b49e;
+}
+
+.bio{
+  justify-self: self-end;
+
+}
+
+.pstatic h3{
+  justify-self: center;
+  color: #01b49e;
+  align-self: center;
+}
+
+.pflex{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 600px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(155, 155, 155, .5);
+  position: absolute;
+  top: 125px;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pflex *{
+  align-self: center;
+  margin: 0;
+}
+
+.into{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+}
+
+.into input{
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid 0.5px #01b49e;
+  margin: 0 10px;
+}
+
+
+.pflex h3{
+  justify-self: center;
+  color: #01b49e;
+  align-self: center;
+}
+
+.flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex *{
+  color: #01b49e;
+}
