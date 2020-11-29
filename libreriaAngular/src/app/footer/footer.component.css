@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+*:focus{
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(75, 72, 72, .3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4848;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background: #4b4848;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+}
+
+.menu ul a li{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.searh input{
+  line-height: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+}
+.searh{
+  position: relative;
+}
+
+.searh i{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #4b4848;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 300px;
+  width: 100%;
+  gap: 20px;
+  background: #4b4848;
+  padding: 20px;
+  position: absolute;
+  bottom: -100px;
+}
+
+.contac-form{grid-column: span 3; color: #fff;}
+.social-media{grid-column: span 2 ;}
+.sobre-nosotros{grid-column: span 5 ;}
+.copy{grid-column: span 2; display: grid; grid-template-rows: 1fr 1fr 1fr; gap: 2px;}
+
+.contac-form h3{
+  text-align: center;
+}
+
+.contac-form input, textarea{
+  display: block;
+  padding: 7px;
+  margin: 8px 0;
+  width: 360px;
+  border: none;
+}
+
+
+/*Trozo de estilo reciclado*/
+.social-media{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-self: center;
+}
+
+
+.social-media > div{
+  font-size: 16px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  border: solid 1px #fff;
+  cursor: pointer;
+  width: 250px;
+
+
+}
+
+.fab{
+  margin-right: 55px;
+}
+
+.social-media >div:hover .fab{
+  margin-right: 5px;
+  transition: ease 2s;
+}
+
+.social-media a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.facebook{
+  background: #3D5B99;
+}
+
+.twitter{
+  background: #1DA1F2;
+
+}
+.linkedin{
+  background: #0073B0;
+
+}
+.google{
+  background: #EA4335;
+
+}
+
+.sobre-nosotros{
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.sobre-nosotros img{
+  margin: 0 20px;
+  border-radius: 50%;
+}
+
+#pp{
+  text-align: justify;
+  color:#fff;
+}
+
+.copy  i{
+  font-size: 40px;
+  margin: 0;
+  padding: 4px;
+}
+
+.frontend{display: flex; justify-content: center; align-items: center;}
+.backend{display: flex; justify-content: center; align-items: center;}
+.copy-copy{display: flex; justify-content: center; align-items: initial; margin-top: 16px; color: #fff;}
+
+.fa-js-square{color: #F7DF1E;}
+.fa-angular{color: #E01D46;}
+.fa-css3-alt{color:#5091BD}
+.fa-html5{color: #f16529;}
+.fa-react{color: #00D9FF;}
+.fa-php{color: #777BB3;}
+.fa-vuejs{color: #3AB183;}
+.fa-laravel{color: #F05340;}
+.fa-git-alt{color:#EA583D;}
+
+.fa-caret-down{padding: 0 4px;}
+.fa-user{padding: 0 4px;}
+
+.user{display: flex; align-items: center;}
+
+.menu{align-self: center;}
+
+.salir {
+  display: flex;
+  align-items: center;
+}
+
+.salir form input{
+  width: 50px;
+  height: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #4b4848;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.salir form input:hover{box-shadow: 5px 5px 20px #fff}
+
+.form-entrada *{
+  margin: 10px 0;
+}
+
+.form-entrada textarea{
+  border: solid 1px;
+}
+
+.form-entrada{
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.form-entrada input{
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.form-entrada input[type="submit"]{
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.form-entrada select{
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.form-entrada textarea{
+  width: 500px;
+}
+
+.form-entrada input[name="titulo"]{
+  width: 500px;
+  margin: 5px 0;
+}
+
+.button-home{
+  margin: 10px;
+  cursor: pointer;
+}
+
+.registro{
+  margin: 100px 10px 0 10px;
+}
+
+/*Entradas*/
+
+.entradas{
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.entrada{
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 20px #4b4848;
+  justify-content: center;
+  padding: 20px;
+}
+
+.e-title{grid-row:span 1;}
+.e-fecha{color: gray; margin-top: 2px;}
+.e-descripcion{grid-row: span 2;}
+.e-imagen{padding: 10px 0; width: 100%;}

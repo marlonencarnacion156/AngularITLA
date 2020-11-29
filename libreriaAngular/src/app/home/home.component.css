@@ -1,0 +1,12 @@
+.container{
+  width: 1400px;
+  height: 480px;
+  background-image: url(https://bit.ly/39esMbk);
+  /*background-size: contain;*/
+  background-size: inherit;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 78px;
+  box-shadow: 5px 5px 20px #4b4848;
+}

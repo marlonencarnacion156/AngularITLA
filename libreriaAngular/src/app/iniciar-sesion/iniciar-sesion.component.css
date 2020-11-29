@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+/*
+.form{
+  width: 500px;
+  height: auto;
+  border: solid 1px red;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  top: 200px;
+  display: flex;
+  justify-content: center;
+}*/
+.title{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-image: url('https://i2.wp.com/www.julianmarquina.es/wp-content/uploads/Herramientas-para-administrar-y-gestionar-nuestra-colecci%C3%B3n-de-libros-electr%C3%B3nicos.jpg?fit=1000%2C666&ssl=1');
+  background-size: cover;
+}
+
+.title img{
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 10px;
+  /*position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);*/
+}
+
+.form-container h1{
+text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 5px 5px 20px #4b4848;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  top: 105px;
+}
+
+.form-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  background: #fff;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.form-container *{
+  align-self: center;
+  justify-self: center;
+  width: 275px;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.form-container input[type="text"]{
+  padding: 0 20px;
+  border: solid 0.5px #1DA1F2;
+}
+
+.google{
+  background: #EA4335;
+  border: solid 1px #fff;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+
+}
+
+.form-container div input[type="submit"]{
+border: solid 1px #fff !important;
+color: #fff !important;
+cursor: pointer;
+background: #4b4848;
+font-weight: 900;
+}

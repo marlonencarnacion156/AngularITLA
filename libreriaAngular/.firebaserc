@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "libreria-2861e": {
+      "hosting": {
+        "libreriaf": [
+          "libreria-2861e"
+        ]
+      }
+    }
+  }
+}

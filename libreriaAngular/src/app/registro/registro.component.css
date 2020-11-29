@@ -1,0 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 5px 5px 20px #4b4848;
+  width: 800px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  top: 105px;
+}
+
+.form-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  background: #fff;
+  padding: 20px 40px;
+  width: 50%;
+  border-bottom: none !important;
+
+}
+
+.form-container h2{
+  text-align: center;
+  color: #4b4848;
+}
+
+.form-container input[type="text"], input[type="mail"], input[type="password"]   {
+  width: 350px;
+  height: 30px;
+  color: #4b4848;
+  border: none;
+  border-bottom: solid 2px #4b4848;
+  font-size: 16px;
+}
+
+
+.form-container input[type="submit"]{
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  background: #4b4848;
+  border: none !important;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover{
+  box-shadow: 5px 5px 20px #4b4848;
+
+}
+
+.social-media{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  background: #4b4848;
+  padding: 20px 40px;
+  width: 115%;
+}
+
+.social-media h2{
+  text-align: center;
+  color: #fff;
+}
+
+.social-media > div{
+  font-size: 16px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  border: solid 1px #fff;
+  cursor: pointer;
+
+
+}
+
+.fab{
+  margin-right: 60px;
+}
+
+.social-media >div:hover .fab{
+  margin-right: 5px;
+  transition: ease 2s;
+}
+
+.facebook{
+  background: #3D5B99;
+}
+
+.twitter{
+  background: #1DA1F2;
+
+}
+.linkedin{
+  background: #0073B0;
+
+}
+.google{
+  background: #EA4335;
+
+}
+
+
+
+.ng-invalid{
+  border-bottom: red solid 2px !important;
+}
+
+.ng-valid{
+  border-bottom:green solid 2px !important;
+}
+
+.ng-pristine{
+  border-bottom: solid 2px #4b4848 !important;
+} 
+
+/*
+.ng-valid[required], .ng-valid.required  {
+  border-bottom: 2px solid #42A948 !important; /* green
+}
+
+.ng-invalid:not(form)  {
+  border-bottom: 2px solid #a94442 !important; /* red
+} */
+

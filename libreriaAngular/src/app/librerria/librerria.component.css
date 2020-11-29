@@ -1,0 +1,77 @@
+.container{
+  width: 1400px;
+  height: 480px;
+  /*background-size: contain;*/
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 78px;
+  box-shadow: 5px 5px 20px #4b4848;
+  overflow-y: scroll;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  box-sizing: border-box;
+}
+
+.libros{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: span 11;
+}
+
+.libros .card{
+  box-shadow: 5px 5px 20px #4b4848;
+  width: 298px;
+  height: 600px;
+  margin: 20px;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  gap: 6px;
+  overflow: hidden;
+}
+.card *{
+  margin: 0;
+  padding: .5px;
+}
+
+.img img{
+  width: 100%;
+}
+
+.titulo h3{width: 100%;}
+.autor h6{width: 100%;}
+.sinopsis p{text-align: justify;}
+
+
+
+.accion button{
+  position: absolute;
+  right: 23px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 900;
+  color: #fff;
+  background: #4b4848;
+  border-radius: 4px;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(75, 72, 72, .3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4848;
+}
+

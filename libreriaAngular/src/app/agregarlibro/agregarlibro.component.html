@@ -1,0 +1,11 @@
+<div class="container">
+<form class="form" [formGroup]="addLibro" (ngSubmit)="save()">
+<div><input placeholder="Título" type="text" formControlName="titulo"></div>
+<div><input placeholder="Autor" type="text" formControlName="autor"></div>
+<div><input placeholder="URL imagen de portada" type="text" formControlName="imagen"></div>
+<div><input placeholder="Cantidad de páginas" type="text" formControlName="paginas"></div>
+<div><input placeholder="Fecha de publicación" type="date" formControlName="fecha"></div>
+<div><textarea placeholder="Sinopsis" cols="30" rows="2" formControlName="sinopsis"></textarea></div>
+<div> <input type="submit" value="Guardar"> </div>
+</form>
+</div>

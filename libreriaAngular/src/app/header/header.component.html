@@ -1,0 +1,14 @@
+<header class="header-container">
+  <div>
+      <a routerLink="/" [routerLinkActive]="'active'"><img class="title" src="{{logo}}"></a>
+  </div>
+  <div>
+    <nav class="menu">
+    <a routerLink="/Iniciar_sesion" [routerLinkActive]="'active'">Iniciar sesión</a>
+    <a routerLink="/Registrate" [routerLinkActive]="'active'">Registrate</a>
+    </nav>
+  </div>
+
+  <div class="searh"><input placeholder="Buscar..." type="text"><i class="fas fa-search"></i></div>
+
+  </header>

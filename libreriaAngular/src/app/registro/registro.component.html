@@ -1,0 +1,81 @@
+<main class="container">
+  <form [formGroup]="registro" class="form-container" (ngSubmit)="save()">
+    <h2>Registrate</h2>
+    <div>
+      <input
+        formControlName="nombre"
+        [ngClass]="{ 'is-invalid': this.nombre.invalid && this.nombre.touched }"
+        [ngClass]="{ 'is-valid': !this.nombre.invalid && !this.nombre.touched }"
+        type="text"
+        placeholder="Nombre"
+      />
+      <!--<small *ngIf="this.nombre.invalid && this.nombre.touched">Escriba un nombre correcto</small> -->
+    </div>
+    <div>
+      <input
+        formControlName="apellido"
+        [ngClass]="{
+          'is-invalid': this.apellido.invalid && this.apellido.touched
+        }"
+        [ngClass]="{
+          'is-valid': !this.apellido.invalid && !this.apellido.touched
+        }"
+        type="text"
+        placeholder="Apellido"
+      />
+    </div>
+    <!-- <div *ngIf="this.apellido.invalid && this.apellido.touched">Escriba un apellido correcto</div>-->
+    <div>
+      <input
+        formControlName="correo"
+        [ngClass]="{ 'is-invalid': this.correo.invalid && this.correo.touched }"
+        [ngClass]="{ 'is-valid': !this.correo.invalid && !this.correo.touched }"
+        type="mail"
+        placeholder="Correo"
+      />
+    </div>
+    <!--<div *ngIf="this.correo.invalid && this.correo.touched">Escriba un correo correcto</div>-->
+    <div>
+      <input
+        formControlName="contrasena"
+        [ngClass]="{
+          'is-invalid': this.contrasena.invalid && this.contrasena.touched
+        }"
+        [ngClass]="{
+          'is-valid': !this.contrasena.invalid && !this.contrasena.touched
+        }"
+        type="password"
+        placeholder="Contraseña"
+      />
+    </div>
+    <!--<div *ngIf="this.contrasena.invalid && this.contrasena.touched">La contraseña ingresada no cumple con los parámetros establecidos</div>-->
+    <div>
+      <input
+        formControlName="contrasena2"
+        [ngClass]="{
+          'is-invalid': this.contrasena2.invalid && this.contrasena2.touched
+        }"
+        [ngClass]="{
+          'is-valid': !this.contrasena2.invalid && !this.contrasena2.touched
+        }"
+        type="password"
+        placeholder="Confirmar Contarseña"
+      />
+    </div>
+    <!--<div *ngIf="this.contrasena2.invalid && this.contrasena2.touched">La contraseña ingresada no cumple con los parámetros establecidos</div>-->
+    <div><input type="submit" value="Registrarse"/></div>
+  </form>
+  <div class="social-media">
+    <h2>Iniciar Sesión Con:</h2>
+    <div class="facebook">
+      <i class="fab fa-facebook-f"></i>Acceder con Facebook
+    </div>
+    <div class="twitter"><i class="fab fa-twitter"></i>Acceder con Twitter</div>
+    <div class="linkedin">
+      <i class="fab fa-linkedin-in"></i>Acceder con Linkedin
+    </div>
+    <div class="google">
+      <i class="fab fa-google-plus-g"></i>Acceder con Google +
+    </div>
+  </div>
+</main>

@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+*:focus{
+  outline: none;
+}
+
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: #4b4848;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+}
+
+.menu{
+  position: absolute;
+  right: 1075px;
+  top: 28px;
+}
+
+.menu a{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border: solid 0.0005px #fff;
+  padding: 2px 20px;
+  border-radius: 15px;
+}
+.menu a:hover{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 20px;
+  color: #4b4848;
+  text-decoration: none;
+  border: solid 1px #fff;
+  padding: 2px 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 5px 5px 20px #fff;
+  transition: all ease 1s;
+}
+
+.searh input{
+  line-height: 15px;
+  border-radius: 30px;
+  /*padding: 5px 50px;*/
+  border: none;
+  padding: 10px 20px;
+}
+
+.searh input:focus{ outline: none; box-shadow: 5px 5px 20px #fff; width: 250px;}
+.searh input:hover{ outline: none; box-shadow: 5px 5px 20px #fff;
+  transition: all ease 1s;
+}
+
+.searh{
+  position: relative;
+  right: 50px;
+}
+
+.searh i{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #4b4848;
+}
+
+.title{
+  width: 100px;
+  border-radius: 20px;
+}
+
+.title:hover{
+box-shadow: 5px 5px 20px #fff;
+transition: all ease 1s;
+}
